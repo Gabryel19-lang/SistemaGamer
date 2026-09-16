@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="NextXP Gaming - Loja de hardware, periféricos, componentes e produtos gamers."
+    >
+
+    <title>NextXP Gaming</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         BARRA SUPERIOR
+    =================================================== -->
+    <div class="top-bar">
+
+        <div class="container top-bar-content">
+
+            <div class="top-info">
+
+                <div class="top-item">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                    <div>
+                        <strong>Frete Grátis</strong>
+                        <span>em compras acima de R$ 299</span>
+                    </div>
+
+                </div>
+
+
+                <div class="top-item">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Compra 100% Segura</strong>
+                        <span>Seus dados protegidos</span>
+                    </div>
+
+                </div>
+
+
+                <div class="top-item">
+
+                    <i class="fa-regular fa-credit-card"></i>
+
+                    <div>
+                        <strong>Parcele em até</strong>
+                        <span>12x sem juros</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="top-info">
+
+                <div class="top-item">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+                        <strong>Suporte</strong>
+                        <span>(17) 0000-0000</span>
+                    </div>
+
+                </div>
+
+
+                <div class="top-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <strong>Nossas Lojas</strong>
+                        <span>Encontre a mais próxima</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         CABEÇALHO PRINCIPAL
+    =================================================== -->
+    <header class="main-header">
+
+        <div class="container header-content">
+
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+
+                <img
+                    src="assets/img/logo-nextxp.png"
+                    alt="Logo NextXP Gaming"
+                >
+
+            </a>
+
+
+
+            <!-- BARRA DE PESQUISA -->
+            <form
+                class="search-bar"
+                id="searchForm"
+            >
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="O que você está procurando?"
+                >
+
+                <button
+                    type="submit"
+                    aria-label="Pesquisar"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </form>
+
+
+
+            <!-- AÇÕES DO CABEÇALHO -->
+            <div class="header-actions">
+
+
+                <!-- CONTA -->
+                <a
+                    href="pages/login.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-circle-user"></i>
+
+                    <div>
+
+                        <strong>Minha Conta</strong>
+
+                        <span>
+                            Olá, visitante!
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- FAVORITOS -->
+                <a
+                    href="pages/favoritos.html"
+                    class="header-action"
+                >
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <div>
+                        <strong>Favoritos</strong>
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARRINHO -->
+                <a
+                    href="pages/carrinho.html"
+                    class="header-action"
+                >
+
+                    <div class="cart-icon">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </div>
+
+
+                    <div>
+                        <strong>Carrinho</strong>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MENU DE CATEGORIAS
+    =================================================== -->
+    <nav class="main-navigation">
+
+        <div class="container navigation-content">
+
+
+            <button class="all-categories-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+                <span>
+                    TODAS AS CATEGORIAS
+                </span>
+
+            </button>
+
+
+
+            <ul class="navigation-menu">
+
+    <li>
+        <a href="pages/produtos.html?categoria=mouse">
+            Mouse
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=teclado">
+            Teclados
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=headset">
+            Headsets
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=monitor">
+            Monitores
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=placa-video">
+            Placa de Vídeo
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=placa-mae">
+            Placa-Mãe
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=processador">
+            Processadores
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=water-cooler">
+            Water Cooler
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=air-cooler">
+            Air Cooler
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=memoria-ram">
+            Memória RAM
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=ssd">
+            HD / SSD
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=fonte">
+            Fontes
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=fans">
+            Fans
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=gabinete">
+            Gabinetes
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=notebook">
+            Notebooks
+        </a>
+    </li>
+
+    <li>
+        <a href="pages/produtos.html?categoria=midia-fisica">
+            Mídia Física
+        </a>
+    </li>
+
+    <li>
+        <a
+            href="#ofertas"
+            class="promotions-link"
+        >
+            🔥 Promoções
+        </a>
+    </li>
+
+</ul>
+        </div>
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         CONTEÚDO PRINCIPAL
+    =================================================== -->
+    <main>
+
+
+        <!-- ==================================================
+             BANNER PRINCIPAL
+        =================================================== -->
+        <section class="hero-section">
+
+
+            <button
+                class="slider-arrow slider-left"
+                id="previousBanner"
+                aria-label="Banner anterior"
+            >
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+
+            <div class="hero-slider">
+
+
+                <div class="hero-slide active">
+
+                    <img
+                        src="assets/img/banner-home.png"
+                        alt="Performance que te leva mais longe - NextXP Gaming"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <button
+                class="slider-arrow slider-right"
+                id="nextBanner"
+                aria-label="Próximo banner"
+            >
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+
+
+            <div class="slider-dots">
+
+                <button class="dot"></button>
+
+                <button class="dot"></button>
+
+                <button class="dot active"></button>
+
+                <button class="dot"></button>
+
+                <button class="dot"></button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CATEGORIAS
+        =================================================== -->
+        <section
+            class="categories-section"
+            id="categorias"
+        >
+
+            <div class="container">
+
+
+                <!-- TÍTULO -->
+                <div class="section-header">
+
+
+                    <div class="section-title-group">
+
+                        <h2>
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            CATEGORIAS
+
+                        </h2>
+
+
+                        <p>
+                            Encontre tudo para o seu setup perfeito!
+                        </p>
+
+                    </div>
+
+
+
+                    <a
+                        href="pages/produtos.html"
+                        class="see-all"
+                    >
+
+                        Ver todas
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- GRADE DE CATEGORIAS -->
+                <div class="categories-grid">
+
+
+                    <!-- MOUSE -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="mouse"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/mouse.png"
+                                alt="Mouse Gamer"
+                            >
+
+                        </div>
+
+                        <h3>Mouse</h3>
+
+                    </a>
+
+
+
+                    <!-- TECLADOS -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="teclados"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/teclado-redragon.png"
+    alt="Teclado Gamer"
+>
+
+                        </div>
+
+                        <h3>Teclados</h3>
+
+                    </a>
+
+
+
+                    <!-- HEADSETS -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="headsets"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/headset-hyperx.png"
+    alt="Headset Gamer"
+>
+
+                        </div>
+
+                        <h3>Headsets</h3>
+
+                    </a>
+
+
+
+                    <!-- MONITORES -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="monitores"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/monitor-aoc.png"
+    alt="Monitor Gamer"
+>
+
+                        </div>
+
+                        <h3>Monitores</h3>
+
+                    </a>
+
+
+
+                    <!-- PLACA DE VÍDEO -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="placa-video"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/rtx-4070.png"
+    alt="Placa de Vídeo"
+>
+
+                        </div>
+
+                        <h3>Placa de Vídeo</h3>
+
+                    </a>
+
+
+
+                    <!-- PLACA-MÃE -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="placa-mae"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/placa-mae.png"
+                                alt="Placa-Mãe"
+                            >
+
+                        </div>
+
+                        <h3>Placa-Mãe</h3>
+
+                    </a>
+
+
+
+                    <!-- WATER COOLER -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="water-cooler"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/water-cooler.png"
+                                alt="Water Cooler"
+                            >
+
+                        </div>
+
+                        <h3>Water Cooler</h3>
+
+                    </a>
+
+
+
+                    <!-- MEMÓRIA RAM -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="memoria-ram"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/memoria-ram.png"
+                                alt="Memória RAM"
+                            >
+
+                        </div>
+
+                        <h3>Memória RAM</h3>
+
+                    </a>
+
+
+
+                    <!-- SSD -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="ssd"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/ssd-kingston.png"
+    alt="HD e SSD"
+>
+
+                        </div>
+
+                        <h3>HD / SSD</h3>
+
+                    </a>
+
+
+
+                    <!-- FONTES -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="fontes"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/fonte.png"
+                                alt="Fonte para computador"
+                            >
+
+                        </div>
+
+                        <h3>Fontes</h3>
+
+                    </a>
+
+
+
+                    <!-- FANS -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="fans"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/fans.png"
+                                alt="Fans RGB"
+                            >
+
+                        </div>
+
+                        <h3>Fans</h3>
+
+                    </a>
+
+
+
+                    <!-- GABINETES -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="gabinetes"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/gabinete.png"
+                                alt="Gabinete Gamer"
+                            >
+
+                        </div>
+
+                        <h3>Gabinetes</h3>
+
+                    </a>
+
+
+
+                    <!-- NOTEBOOKS -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="notebooks"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+    src="assets/img/notebook-acer.png"
+    alt="Notebook Gamer"
+>
+
+                        </div>
+
+                        <h3>Notebooks</h3>
+
+                    </a>
+
+
+
+                    <!-- MÍDIA FÍSICA -->
+                    <a
+                        href="#"
+                        class="category-card"
+                        id="midia-fisica"
+                    >
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/img/midia-fisica.png"
+                                alt="Jogos em mídia física"
+                            >
+
+                        </div>
+
+                        <h3>Mídia Física</h3>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             OFERTAS EM DESTAQUE
+        =================================================== -->
+        <section
+            class="offers-section"
+            id="ofertas"
+        >
+
+            <div class="container">
+
+
+                <!-- CABEÇALHO -->
+                <div class="offers-header">
+
+
+                    <h2>
+
+                        🔥 OFERTAS EM DESTAQUE
+
+                    </h2>
+
+
+
+                    <div class="offer-timer">
+
+                        <span>
+                            Termina em:
+                        </span>
+
+                        <strong id="countdown">
+
+                            08 : 34 : 12
+
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CONTEÚDO -->
+                <div class="offers-content">
+
+
+                    <!-- GRADE DE PRODUTOS -->
+                    <div class="products-grid">
+
+
+                        <!-- ==================================================
+                             PRODUTO 1
+                        =================================================== -->
+                        <article
+                            class="product-card"
+                            data-name="rtx 4070 super 12gb"
+                        >
+
+
+                            <span class="discount-badge">
+                                23% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/rtx-4070.png"
+                                    alt="RTX 4070 Super 12GB"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    RTX 4070 Super 12GB
+                                </h3>
+
+
+                                <p>
+                                    ASUS Dual - NVIDIA
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 3.899,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 2.999,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 249,99
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             PRODUTO 2
+                        =================================================== -->
+                        <article
+    class="product-card"
+    data-id="monitor-aoc-27"
+    data-name="monitor gamer 27 aoc 180hz"
+>
+
+
+                            <span class="discount-badge">
+                                18% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/monitor-aoc.png"
+                                    alt="Monitor Gamer AOC 27 polegadas"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    Monitor Gamer 27" 180Hz
+                                </h3>
+
+
+                                <p>
+                                    AOC Full HD - 1ms
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 1.499,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 1.229,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 102,49
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             PRODUTO 3
+                        =================================================== -->
+                        <article
+    class="product-card"
+    data-id="redragon-kumara"
+    data-name="teclado mecanico rgb redragon kumara"
+>
+
+
+                            <span class="discount-badge">
+                                20% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/teclado-redragon.png"
+                                    alt="Teclado Mecânico RGB Redragon"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    Teclado Mecânico RGB
+                                </h3>
+
+
+                                <p>
+                                    Redragon Kumara
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 499,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 399,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 33,33
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             PRODUTO 4
+                        =================================================== -->
+                        <article
+    class="product-card"
+    data-id="hyperx-cloud-ii"
+    data-name="headset hyperx cloud ii"
+>
+
+
+                            <span class="discount-badge">
+                                20% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/headset-hyperx.png"
+                                    alt="Headset HyperX Cloud II"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    Headset HyperX Cloud II
+                                </h3>
+
+
+                                <p>
+                                    7.1 Surround
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 599,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 479,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 39,99
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             PRODUTO 5
+                        =================================================== -->
+                        <article
+    class="product-card"
+    data-id="kingston-nv2-1tb"
+    data-name="ssd kingston nv2 1tb"
+>
+
+                            <span class="discount-badge">
+                                15% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/ssd-kingston.png"
+                                    alt="SSD Kingston NV2 1TB"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    SSD Kingston NV2 1TB
+                                </h3>
+
+
+                                <p>
+                                    NVMe - 3500MB/s
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 599,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 449,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 37,49
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- ==================================================
+                             PRODUTO 6
+                        =================================================== -->
+                        <article
+    class="product-card"
+    data-id="acer-nitro-5"
+    data-name="notebook acer nitro 5"
+>
+
+
+                            <span class="discount-badge">
+                                10% OFF
+                            </span>
+
+
+
+                            <button
+                                class="favorite-btn"
+                                type="button"
+                                aria-label="Adicionar aos favoritos"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+
+                            <div class="product-image">
+
+                                <img
+                                    src="assets/img/notebook-acer.png"
+                                    alt="Notebook Acer Nitro 5"
+                                >
+
+                            </div>
+
+
+
+                            <div class="product-info">
+
+
+                                <h3>
+                                    Notebook Acer Nitro 5
+                                </h3>
+
+
+                                <p>
+                                    i5 - RTX 3050 - 16GB
+                                </p>
+
+
+                                <span class="old-price">
+
+                                    R$ 4.299,90
+
+                                </span>
+
+
+                                <strong class="product-price">
+
+                                    R$ 3.849,90
+
+                                </strong>
+
+
+                                <span class="installments">
+
+                                    12x de R$ 320,82
+
+                                </span>
+
+
+                                <span class="stock">
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    Em estoque
+
+                                </span>
+
+
+
+                                <button
+                                    class="buy-button"
+                                    type="button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Comprar
+
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         BANNER DE MÍDIA FÍSICA
+                    =================================================== -->
+                    <aside class="physical-media-banner">
+
+
+                        <img
+                            src="assets/img/banner-midia-fisica.png"
+                            alt="Jogos em mídia física"
+                        >
+
+
+                        <div class="physical-media-content">
+
+
+                            <h2>
+                                MÍDIA FÍSICA
+                            </h2>
+
+
+                            <p>
+                                Os melhores jogos para sua coleção.
+                            </p>
+
+
+
+                            <div class="platforms">
+
+                                <span>PS5</span>
+
+                                <span>PS4</span>
+
+                                <span>Nintendo Switch</span>
+
+                            </div>
+
+
+
+                            <a
+                                href="#"
+                                class="games-button"
+                            >
+
+                                VER JOGOS
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+    <footer class="footer">
+
+
+        <div class="container footer-main">
+
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img
+                    src="assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                >
+
+            </div>
+
+
+
+            <!-- BENEFÍCIOS -->
+            <div class="footer-benefits">
+
+
+                <div class="footer-benefit">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                    <div>
+
+                        <strong>
+                            Frete Grátis
+                        </strong>
+
+                        <span>
+                            Acima de R$ 299
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-benefit">
+
+                    <i class="fa-regular fa-credit-card"></i>
+
+                    <div>
+
+                        <strong>
+                            Parcele sem juros
+                        </strong>
+
+                        <span>
+                            Em até 12x
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-benefit">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+
+                        <strong>
+                            Compra 100% Segura
+                        </strong>
+
+                        <span>
+                            Seus dados protegidos
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-benefit">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+
+                        <strong>
+                            Suporte Especializado
+                        </strong>
+
+                        <span>
+                            Chat ou WhatsApp
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-benefit">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <strong>
+                            Nossas Lojas
+                        </strong>
+
+                        <span>
+                            Encontre a mais próxima
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             RODAPÉ INFERIOR
+        =================================================== -->
+        <div class="container footer-bottom">
+
+
+            <!-- PAGAMENTOS -->
+            <div class="payment-methods">
+
+
+                <span>
+                    Formas de Pagamento:
+                </span>
+
+
+                <div class="payments">
+
+                    <span>VISA</span>
+
+                    <span>Mastercard</span>
+
+                    <span>Elo</span>
+
+                    <span>AMEX</span>
+
+                    <span>PIX</span>
+
+                    <span>Boleto</span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- COPYRIGHT -->
+            <div class="copyright">
+
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+
+            </div>
+
+
+
+            <!-- REDES SOCIAIS -->
+            <div class="social-media">
+
+
+                <span>
+                    Siga-nos:
+                </span>
+
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                >
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="TikTok"
+                >
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Discord"
+                >
+
+                    <i class="fa-brands fa-discord"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
