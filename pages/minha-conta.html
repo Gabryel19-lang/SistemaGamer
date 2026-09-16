@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Minha Conta - NextXP Gaming"
+    >
+
+    <title>Minha Conta | NextXP Gaming</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body class="account-page">
+
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+    <header class="account-header">
+
+        <div class="container account-header-content">
+
+            <a
+                href="../index.html"
+                class="account-logo"
+            >
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                >
+            </a>
+
+
+            <a
+                href="../index.html"
+                class="account-back"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para a loja
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTEÚDO
+    =========================================== -->
+    <main class="account-main">
+
+        <div class="container">
+
+
+            <!-- ======================================
+                 TÍTULO
+            ======================================= -->
+            <div class="account-title">
+
+                <span>
+                    NEXTXP GAMING
+                </span>
+
+                <h1>
+                    Minha Conta
+                </h1>
+
+                <p>
+                    Gerencie sua conta e acompanhe seus pedidos.
+                </p>
+
+            </div>
+
+
+
+            <!-- ======================================
+                 LAYOUT
+            ======================================= -->
+            <div class="account-layout">
+
+
+                <!-- ==================================
+                     MENU LATERAL
+                =================================== -->
+                <aside class="account-sidebar">
+
+
+                    <!-- USUÁRIO -->
+                    <div class="account-user">
+
+                        <div class="account-avatar">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong id="accountUserName">
+                                Cliente NextXP
+                            </strong>
+
+                            <span id="accountUserEmail">
+                                email@email.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MENU -->
+                    <nav class="account-menu">
+
+
+                        <button
+                            type="button"
+                            class="account-menu-item active"
+                            data-section="accountOverview"
+                        >
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Visão Geral
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="account-menu-item"
+                            data-section="accountOrders"
+                        >
+
+                            <i class="fa-solid fa-box"></i>
+
+                            Meus Pedidos
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="account-menu-item"
+                            data-section="accountProfile"
+                        >
+
+                            <i class="fa-solid fa-user-gear"></i>
+
+                            Meus Dados
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="account-menu-item logout-button"
+                            id="logoutButton"
+                        >
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Sair
+
+                        </button>
+
+
+                    </nav>
+
+
+                </aside>
+
+
+
+                <!-- ==================================
+                     CONTEÚDO DA CONTA
+                =================================== -->
+                <section class="account-content">
+
+
+                    <!-- ==================================
+                         VISÃO GERAL
+                    =================================== -->
+                    <div
+                        class="account-section active"
+                        id="accountOverview"
+                    >
+
+
+                        <div class="account-section-header">
+
+                            <div>
+
+                                <h2>
+                                    Visão Geral
+                                </h2>
+
+                                <p>
+                                    Resumo da sua conta NextXP Gaming.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CARDS -->
+                        <div class="account-stats">
+
+
+                            <div class="account-stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fa-solid fa-box"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Pedidos realizados
+                                    </span>
+
+                                    <strong id="totalOrders">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="account-stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Produtos comprados
+                                    </span>
+
+                                    <strong id="totalProductsBought">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="account-stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Total em compras
+                                    </span>
+
+                                    <strong id="totalSpent">
+                                        R$ 0,00
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- ÚLTIMO PEDIDO -->
+                        <div class="account-last-order">
+
+                            <div class="account-block-title">
+
+                                <h3>
+                                    Último Pedido
+                                </h3>
+
+                                <button
+                                    type="button"
+                                    id="viewAllOrders"
+                                >
+                                    Ver todos
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                id="lastOrderContainer"
+                                class="last-order-container"
+                            >
+
+                                <p class="account-empty-message">
+
+                                    Nenhum pedido realizado ainda.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         MEUS PEDIDOS
+                    =================================== -->
+                    <div
+                        class="account-section"
+                        id="accountOrders"
+                    >
+
+
+                        <div class="account-section-header">
+
+                            <div>
+
+                                <h2>
+                                    Meus Pedidos
+                                </h2>
+
+                                <p>
+                                    Acompanhe todas as suas compras.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="orders-list"
+                            id="ordersList"
+                        >
+
+                            <p class="account-empty-message">
+
+                                Você ainda não possui pedidos.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         MEUS DADOS
+                    =================================== -->
+                    <div
+                        class="account-section"
+                        id="accountProfile"
+                    >
+
+
+                        <div class="account-section-header">
+
+                            <div>
+
+                                <h2>
+                                    Meus Dados
+                                </h2>
+
+                                <p>
+                                    Informações da sua conta.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="account-profile-card">
+
+
+                            <div class="profile-field">
+
+                                <label>
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="profileEmail"
+                                    readonly
+                                >
+
+                            </div>
+
+
+
+                            <div class="profile-field">
+
+                                <label>
+                                    Status da conta
+                                </label>
+
+                                <div class="account-status">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Conta ativa
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+    <footer class="account-footer">
+
+        <div class="container account-footer-content">
+
+            <img
+                src="../assets/img/logo-nextxp.png"
+                alt="NextXP Gaming"
+            >
+
+            <p>
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Catálogo de produtos NextXP Gaming"
+    >
+
+    <title>Produtos | NextXP Gaming</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="catalog-page">
+
+
+    <!-- ==================================================
+         CABEÇALHO
+    =================================================== -->
+    <header class="catalog-header">
+
+        <div class="container catalog-header-content">
+
+
+            <!-- LOGO -->
+            <a href="../index.html">
+
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                    class="catalog-logo"
+                >
+
+            </a>
+
+
+
+            <!-- PESQUISA -->
+            <div class="catalog-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="catalogSearch"
+                    placeholder="Buscar produtos..."
+                >
+
+            </div>
+
+
+
+            <!-- AÇÕES -->
+            <div class="catalog-header-actions">
+
+
+                <a href="favoritos.html">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    Favoritos
+
+                </a>
+
+
+                <a href="carrinho.html">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Carrinho
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTEÚDO
+    =================================================== -->
+    <main class="catalog-main">
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+            <div class="catalog-title">
+
+                <span>
+                    NEXTXP GAMING
+                </span>
+
+                <h1>
+                    Todos os Produtos
+                </h1>
+
+                <p>
+                    Encontre o equipamento ideal para elevar seu setup.
+                </p>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 LAYOUT
+            =================================================== -->
+            <div class="catalog-layout">
+
+
+                <!-- ==============================================
+                     FILTROS
+                =============================================== -->
+                <aside class="catalog-filters">
+
+
+                    <div class="filters-title">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                        <h2>
+                            Filtros
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- CATEGORIA -->
+                    <!-- CATEGORIA -->
+<div class="filter-group">
+
+    <h3>
+        Categoria
+    </h3>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="todos"
+            checked
+        >
+        Todos
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="mouse"
+        >
+        Mouse
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="teclado"
+        >
+        Teclados
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="headset"
+        >
+        Headsets
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="monitor"
+        >
+        Monitores
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="placa-video"
+        >
+        Placas de Vídeo
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="placa-mae"
+        >
+        Placas-Mãe
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="processador"
+        >
+        Processadores
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="water-cooler"
+        >
+        Water Cooler
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="air-cooler"
+        >
+        Air Cooler
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="memoria-ram"
+        >
+        Memória RAM
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="ssd"
+        >
+        HD / SSD
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="fonte"
+        >
+        Fontes
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="fans"
+        >
+        Fans
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="gabinete"
+        >
+        Gabinetes
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="notebook"
+        >
+        Notebooks
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="category"
+            value="midia-fisica"
+        >
+        Mídia Física
+    </label>
+
+</div>
+
+
+
+                    <!-- LIMPAR -->
+                    <button
+                        type="button"
+                        id="clearCatalogFilters"
+                        class="clear-filters-button"
+                    >
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        Limpar filtros
+
+                    </button>
+
+
+                </aside>
+
+
+
+                <!-- ==============================================
+                     PRODUTOS
+                =============================================== -->
+                <section class="catalog-products-area">
+
+
+                    <!-- BARRA SUPERIOR -->
+                    <div class="catalog-toolbar">
+
+
+                        <span id="catalogResultsCount">
+
+                            6 produtos encontrados
+
+                        </span>
+
+
+
+                        <select id="catalogOrder">
+
+                            <option value="default">
+                                Ordenar por
+                            </option>
+
+                            <option value="price-low">
+                                Menor preço
+                            </option>
+
+                            <option value="price-high">
+                                Maior preço
+                            </option>
+
+                            <option value="name">
+                                Nome A-Z
+                            </option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+                    <!-- GRID -->
+                    <div
+                        class="catalog-products-grid"
+                        id="catalogProductsGrid"
+                    >
+
+
+                        <!-- ======================================
+                             RTX 4070
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="rtx-4070-super-12gb"
+                            data-name="RTX 4070 Super 12GB ASUS Dual NVIDIA"
+                            data-category="placa-video"
+                            data-price="2999.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+                                <img
+                                    src="../assets/img/rtx-4070.png"
+                                    alt="RTX 4070 Super"
+                                >
+
+                            </div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    PLACA DE VÍDEO
+                                </span>
+
+                                <h3>
+                                    RTX 4070 Super 12GB
+                                </h3>
+
+                                <p>
+                                    ASUS Dual - NVIDIA
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 3.899,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 2.999,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 299,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ======================================
+                             MONITOR
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="monitor-aoc-27"
+                            data-name="Monitor Gamer 27 180Hz AOC Full HD"
+                            data-category="monitor"
+                            data-price="1229.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/monitor-aoc.png"
+        alt="Monitor Gamer AOC 27 180Hz"
+    >
+
+</div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    MONITOR
+                                </span>
+
+                                <h3>
+                                    Monitor Gamer 27" 180Hz
+                                </h3>
+
+                                <p>
+                                    AOC Full HD - 1ms
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 1.499,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 1.229,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 122,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ======================================
+                             TECLADO
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="redragon-kumara"
+                            data-name="Teclado Mecânico RGB Redragon Kumara"
+                            data-category="teclado"
+                            data-price="399.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/teclado-redragon.png"
+        alt="Teclado Mecânico Redragon Kumara"
+    >
+
+</div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    TECLADO
+                                </span>
+
+                                <h3>
+                                    Teclado Mecânico RGB
+                                </h3>
+
+                                <p>
+                                    Redragon Kumara
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 499,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 399,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 39,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ======================================
+                             HEADSET
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="hyperx-cloud-ii"
+                            data-name="Headset HyperX Cloud II 7.1 Surround"
+                            data-category="headset"
+                            data-price="479.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/headset-hyperx.png"
+        alt="Headset HyperX Cloud II"
+    >
+
+</div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    HEADSET
+                                </span>
+
+                                <h3>
+                                    Headset HyperX Cloud II
+                                </h3>
+
+                                <p>
+                                    7.1 Surround
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 599,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 479,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 47,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ======================================
+                             SSD
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="kingston-nv2-1tb"
+                            data-name="SSD Kingston NV2 1TB NVMe"
+                            data-category="ssd"
+                            data-price="449.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/ssd-kingston.png"
+        alt="SSD Kingston NV2 1TB"
+    >
+
+</div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    SSD
+                                </span>
+
+                                <h3>
+                                    SSD Kingston NV2 1TB
+                                </h3>
+
+                                <p>
+                                    NVMe - 3500MB/s
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 599,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 449,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 44,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ======================================
+                             NOTEBOOK
+                        ======================================= -->
+                        <article
+                            class="catalog-product-card"
+                            data-id="acer-nitro-5"
+                            data-name="Notebook Acer Nitro 5 RTX 3050"
+                            data-category="notebook"
+                            data-price="3849.90"
+                        >
+
+                            <button
+                                type="button"
+                                class="catalog-favorite-button"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/notebook-acer.png"
+        alt="Notebook Acer Nitro 5"
+    >
+
+</div>
+
+
+                            <div class="catalog-product-info">
+
+                                <span class="catalog-category">
+                                    NOTEBOOK
+                                </span>
+
+                                <h3>
+                                    Notebook Acer Nitro 5
+                                </h3>
+
+                                <p>
+                                    i5 - RTX 3050 - 16GB
+                                </p>
+
+                                <span class="catalog-old-price">
+                                    R$ 4.299,90
+                                </span>
+
+                                <strong class="catalog-price">
+                                    R$ 3.849,90
+                                </strong>
+
+                                <span class="catalog-installments">
+                                    10x de R$ 384,99 sem juros
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="catalog-buy-button"
+                                >
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    COMPRAR
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+<!-- =====================================================
+     MOUSE
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="logitech-g502-hero"
+    data-name="Mouse Gamer Logitech G502 Hero"
+    data-category="mouse"
+    data-price="349.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/mouse.png"
+            alt="Mouse Gamer Logitech G502 Hero"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            MOUSE
+        </span>
+
+        <h3>
+            Mouse Gamer Logitech G502 Hero
+        </h3>
+
+        <p>
+            25.600 DPI - RGB - 11 botões
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 449,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 349,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 34,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PLACA-MÃE
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="asus-tuf-b550m"
+    data-name="Placa-Mãe ASUS TUF Gaming B550M"
+    data-category="placa-mae"
+    data-price="899.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+    <img
+        src="../assets/img/placa-mae.png"
+        alt="ASUS TUF Gaming B550M"
+    >
+
+</div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            PLACA-MÃE
+        </span>
+
+        <h3>
+            ASUS TUF Gaming B550M
+        </h3>
+
+        <p>
+            AMD AM4 - DDR4 - M.2
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 1.099,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 899,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 89,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     PROCESSADOR
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="ryzen-7-5700x"
+    data-name="Processador AMD Ryzen 7 5700X"
+    data-category="processador"
+    data-price="1099.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+    <img
+        src="../assets/img/processador.png"
+        alt="AMD Ryzen 7 5700X"
+    >
+</div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            PROCESSADOR
+        </span>
+
+        <h3>
+            AMD Ryzen 7 5700X
+        </h3>
+
+        <p>
+            8 núcleos - 16 threads - AM4
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 1.399,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 1.099,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 109,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     WATER COOLER
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="water-cooler-240-rgb"
+    data-name="Water Cooler Gamer 240mm RGB"
+    data-category="water-cooler"
+    data-price="429.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+    <img
+        src="../assets/img/water-cooler.png"
+        alt="Water Cooler 240mm RGB"
+    >
+</div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            WATER COOLER
+        </span>
+
+        <h3>
+            Water Cooler 240mm RGB
+        </h3>
+
+        <p>
+            Radiador duplo - RGB
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 549,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 429,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 42,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     AIR COOLER
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="air-cooler-rgb"
+    data-name="Air Cooler Gamer RGB 120mm"
+    data-category="air-cooler"
+    data-price="189.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/air-cooler.png"
+            alt="Air Cooler Gamer RGB"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            AIR COOLER
+        </span>
+
+        <h3>
+            Air Cooler Gamer RGB
+        </h3>
+
+        <p>
+            Fan 120mm - dissipador torre
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 239,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 189,90
+        </strong>
+
+        <span class="catalog-installments">
+            6x de R$ 31,65 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     MEMÓRIA RAM
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="kingston-fury-16gb"
+    data-name="Memória RAM Kingston Fury 16GB"
+    data-category="memoria-ram"
+    data-price="329.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/memoria-ram.png"
+            alt="Memória RAM Kingston Fury"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            MEMÓRIA RAM
+        </span>
+
+        <h3>
+            Kingston Fury 16GB
+        </h3>
+
+        <p>
+            DDR4 - 3200MHz
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 399,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 329,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 32,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     FONTE
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="corsair-cv650"
+    data-name="Fonte Corsair CV650 650W"
+    data-category="fonte"
+    data-price="399.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/fonte.png"
+            alt="Fonte Corsair CV650"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            FONTE
+        </span>
+
+        <h3>
+            Corsair CV650 650W
+        </h3>
+
+        <p>
+            80 Plus Bronze
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 499,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 399,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 39,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     FANS
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="kit-fans-rgb-3"
+    data-name="Kit 3 Fans Gamer RGB 120mm"
+    data-category="fans"
+    data-price="159.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/fans.png"
+            alt="Kit Fans Gamer RGB"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            FANS
+        </span>
+
+        <h3>
+            Kit 3 Fans Gamer RGB
+        </h3>
+
+        <p>
+            120mm - iluminação RGB
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 219,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 159,90
+        </strong>
+
+        <span class="catalog-installments">
+            5x de R$ 31,98 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     GABINETE
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="gabinete-nextxp-air"
+    data-name="Gabinete Gamer Mid Tower RGB"
+    data-category="gabinete"
+    data-price="379.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/gabinete.png"
+            alt="Gabinete Gamer Mid Tower RGB"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            GABINETE
+        </span>
+
+        <h3>
+            Gabinete Gamer Mid Tower
+        </h3>
+
+        <p>
+            Vidro temperado - RGB
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 479,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 379,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 37,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     MÍDIA FÍSICA
+===================================================== -->
+<article
+    class="catalog-product-card"
+    data-id="jogo-midia-fisica"
+    data-name="Jogo Mídia Física PlayStation 5"
+    data-category="midia-fisica"
+    data-price="299.90"
+>
+
+    <button
+        type="button"
+        class="catalog-favorite-button"
+    >
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <div class="catalog-product-image">
+
+        <img
+            src="../assets/img/midia-fisica.png"
+            alt="Jogo Mídia Física PlayStation 5"
+        >
+
+    </div>
+
+    <div class="catalog-product-info">
+
+        <span class="catalog-category">
+            MÍDIA FÍSICA
+        </span>
+
+        <h3>
+            Jogo Mídia Física PS5
+        </h3>
+
+        <p>
+            Edição física para PlayStation 5
+        </p>
+
+        <span class="catalog-old-price">
+            R$ 349,90
+        </span>
+
+        <strong class="catalog-price">
+            R$ 299,90
+        </strong>
+
+        <span class="catalog-installments">
+            10x de R$ 29,99 sem juros
+        </span>
+
+        <button
+            type="button"
+            class="catalog-buy-button"
+        >
+            <i class="fa-solid fa-cart-shopping"></i>
+            COMPRAR
+        </button>
+
+    </div>
+
+</article>
+                    </div>
+
+
+
+                    <!-- NENHUM RESULTADO -->
+                    <div
+                        class="catalog-empty"
+                        id="catalogEmpty"
+                        style="display: none;"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <h2>
+                            Nenhum produto encontrado
+                        </h2>
+
+                        <p>
+                            Tente alterar sua busca ou os filtros.
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+    <footer class="catalog-footer">
+
+        <div class="container catalog-footer-content">
+
+            <img
+                src="../assets/img/logo-nextxp.png"
+                alt="NextXP Gaming"
+            >
+
+            <p>
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

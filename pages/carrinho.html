@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Carrinho de compras da NextXP Gaming."
+    >
+
+    <title>Carrinho | NextXP Gaming</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="cart-page">
+
+
+    <!-- ==================================================
+         CABEÇALHO
+    =================================================== -->
+    <header class="cart-header">
+
+        <div class="container cart-header-content">
+
+
+            <!-- LOGO -->
+            <a
+                href="../index.html"
+                class="cart-logo"
+            >
+
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                >
+
+            </a>
+
+
+            <!-- VOLTAR -->
+            <a
+                href="../index.html"
+                class="back-store"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Continuar comprando
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTEÚDO PRINCIPAL
+    =================================================== -->
+    <main class="cart-main">
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+            <div class="cart-title">
+
+                <div>
+
+                    <span class="cart-small-title">
+                        NEXTXP GAMING
+                    </span>
+
+                    <h1>
+                        Meu Carrinho
+                    </h1>
+
+                    <p>
+                        Confira seus produtos antes de finalizar a compra.
+                    </p>
+
+                </div>
+
+
+                <div class="cart-title-icon">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 ÁREA PRINCIPAL DO CARRINHO
+            =================================================== -->
+            <div class="cart-layout">
+
+
+                <!-- ==================================================
+                     PRODUTOS
+                =================================================== -->
+                <section class="cart-products-area">
+
+
+                    <!-- CABEÇALHO -->
+                    <div class="cart-products-header">
+
+                        <h2>
+                            Produtos
+                        </h2>
+
+
+                        <span id="cartItemsCount">
+                            0 produtos
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         LISTA DE PRODUTOS
+                    =================================================== -->
+                    <div
+                        class="cart-products-list"
+                        id="cartProductsList"
+                    >
+
+
+                        <!--
+                            Os produtos serão adicionados
+                            aqui pelo JavaScript.
+                        -->
+
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         CARRINHO VAZIO
+                    =================================================== -->
+                    <div
+                        class="empty-cart"
+                        id="emptyCart"
+                    >
+
+
+                        <div class="empty-cart-icon">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                        </div>
+
+
+                        <h2>
+                            Seu carrinho está vazio
+                        </h2>
+
+
+                        <p>
+                            Parece que você ainda não adicionou
+                            nenhum produto ao carrinho.
+                        </p>
+
+
+                        <a
+                            href="../index.html"
+                            class="empty-cart-button"
+                        >
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                            Ver produtos
+
+                        </a>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     RESUMO DO PEDIDO
+                =================================================== -->
+                <aside class="cart-summary">
+
+
+                    <h2>
+                        Resumo do Pedido
+                    </h2>
+
+
+
+                    <!-- SUBTOTAL -->
+                    <div class="summary-line">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="cartSubtotal">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- DESCONTO -->
+                    <div class="summary-line">
+
+                        <span>
+                            Desconto
+                        </span>
+
+                        <strong
+                            class="summary-discount"
+                            id="cartDiscount"
+                        >
+                            - R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- FRETE -->
+                    <div class="summary-line">
+
+                        <span>
+                            Frete
+                        </span>
+
+                        <strong id="cartShipping">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- DIVISOR -->
+                    <div class="summary-divider"></div>
+
+
+
+                    <!-- TOTAL -->
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+
+                        <strong id="cartTotal">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- PARCELAMENTO -->
+                    <p class="summary-installments">
+
+                        ou em até
+
+                        <strong>
+                            12x sem juros
+                        </strong>
+
+                    </p>
+
+
+
+                    <!-- ==================================================
+                         CUPOM
+                    =================================================== -->
+                    <div class="coupon-area">
+
+
+                        <label for="couponInput">
+
+                            Cupom de desconto
+
+                        </label>
+
+
+                        <div class="coupon-form">
+
+                            <input
+                                type="text"
+                                id="couponInput"
+                                placeholder="Digite seu cupom"
+                            >
+
+
+                            <button
+                                type="button"
+                                id="applyCoupon"
+                            >
+
+                                Aplicar
+
+                            </button>
+
+
+                        </div>
+
+
+                        <span
+                            class="coupon-message"
+                            id="couponMessage"
+                        ></span>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         FINALIZAR PEDIDO
+                    =================================================== -->
+                    <button
+                        type="button"
+                        class="checkout-button"
+                        id="checkoutButton"
+                    >
+
+                        FINALIZAR PEDIDO
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+
+                    <!-- ==================================================
+                         SEGURANÇA
+                    =================================================== -->
+                    <div class="cart-security">
+
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+
+                        <div>
+
+                            <strong>
+                                Compra 100% Segura
+                            </strong>
+
+                            <span>
+                                Seus dados estão protegidos
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         BENEFÍCIOS
+    =================================================== -->
+    <section class="cart-benefits">
+
+        <div class="container cart-benefits-grid">
+
+
+            <!-- BENEFÍCIO 1 -->
+            <div class="cart-benefit">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <div>
+
+                    <strong>
+                        Frete Grátis
+                    </strong>
+
+                    <span>
+                        Acima de R$ 299
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BENEFÍCIO 2 -->
+            <div class="cart-benefit">
+
+                <i class="fa-regular fa-credit-card"></i>
+
+                <div>
+
+                    <strong>
+                        Até 12x sem juros
+                    </strong>
+
+                    <span>
+                        No cartão
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BENEFÍCIO 3 -->
+            <div class="cart-benefit">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+
+                    <strong>
+                        Compra Segura
+                    </strong>
+
+                    <span>
+                        Seus dados protegidos
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BENEFÍCIO 4 -->
+            <div class="cart-benefit">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <div>
+
+                    <strong>
+                        Suporte
+                    </strong>
+
+                    <span>
+                        Atendimento especializado
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+    <footer class="cart-footer">
+
+        <div class="container cart-footer-content">
+
+
+            <img
+                src="../assets/img/logo-nextxp.png"
+                alt="NextXP Gaming"
+            >
+
+
+            <p>
+
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>

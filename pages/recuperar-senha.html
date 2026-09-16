@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Recupere sua senha da NextXP Gaming."
+    >
+
+    <title>Recuperar Senha | NextXP Gaming</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="recovery-page">
+
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+    <header class="recovery-header">
+
+        <div class="container recovery-header-content">
+
+            <a href="../index.html">
+
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                    class="recovery-logo"
+                >
+
+            </a>
+
+
+            <a
+                href="login.html"
+                class="recovery-back"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar ao login
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTEÚDO
+    =========================================== -->
+    <main class="recovery-main">
+
+
+        <section class="recovery-card">
+
+
+            <!-- ÍCONE -->
+            <div class="recovery-icon">
+
+                <i class="fa-solid fa-key"></i>
+
+            </div>
+
+
+            <span class="recovery-small-title">
+                NEXTXP GAMING
+            </span>
+
+
+            <h1>
+                Recuperar senha
+            </h1>
+
+
+            <p class="recovery-description">
+
+                Informe o e-mail cadastrado na sua conta
+                para continuar com a recuperação da senha.
+
+            </p>
+
+
+
+            <!-- ======================================
+                 ETAPA 1 - EMAIL
+            ======================================= -->
+            <form
+                id="recoveryEmailForm"
+                class="recovery-form"
+            >
+
+
+                <div class="recovery-form-group">
+
+                    <label for="recoveryEmail">
+                        E-mail
+                    </label>
+
+
+                    <div class="recovery-input">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="recoveryEmail"
+                            placeholder="Digite seu e-mail"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="recovery-button"
+                >
+
+                    CONTINUAR
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- ======================================
+                 ETAPA 2 - NOVA SENHA
+            ======================================= -->
+            <form
+                id="newPasswordForm"
+                class="recovery-form recovery-new-password"
+                style="display: none;"
+            >
+
+
+                <div class="recovery-success">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span id="recoveryAccountEmail">
+                        Conta encontrada
+                    </span>
+
+                </div>
+
+
+
+                <!-- NOVA SENHA -->
+                <div class="recovery-form-group">
+
+                    <label for="newPassword">
+                        Nova senha
+                    </label>
+
+
+                    <div class="recovery-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="newPassword"
+                            placeholder="Digite sua nova senha"
+                        >
+
+
+                        <button
+                            type="button"
+                            id="showNewPassword"
+                            class="recovery-show-password"
+                        >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRMAR SENHA -->
+                <div class="recovery-form-group">
+
+                    <label for="confirmNewPassword">
+                        Confirmar nova senha
+                    </label>
+
+
+                    <div class="recovery-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmNewPassword"
+                            placeholder="Digite novamente sua senha"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="recovery-button"
+                >
+
+                    <i class="fa-solid fa-key"></i>
+
+                    ALTERAR SENHA
+
+                </button>
+
+
+            </form>
+
+
+
+            <div class="recovery-login">
+
+                <span>
+                    Lembrou sua senha?
+                </span>
+
+                <a href="login.html">
+                    Fazer login
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+    <footer class="recovery-footer">
+
+        <p>
+            © 2026 NextXP Gaming.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

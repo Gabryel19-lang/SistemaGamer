@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Entre na sua conta NextXP Gaming."
+    >
+
+    <title>Login | NextXP Gaming</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="login-page">
+
+
+    <!-- ==================================================
+         CABEÇALHO DO LOGIN
+    =================================================== -->
+    <header class="login-header">
+
+        <div class="container login-header-content">
+
+
+            <!-- LOGO -->
+            <a
+                href="../index.html"
+                class="login-logo"
+            >
+
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                >
+
+            </a>
+
+
+            <!-- VOLTAR -->
+            <a
+                href="../index.html"
+                class="back-home"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para a loja
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTEÚDO PRINCIPAL
+    =================================================== -->
+    <main class="login-main">
+
+
+        <div class="login-container">
+
+
+            <!-- ==================================================
+                 LADO ESQUERDO
+            =================================================== -->
+            <section class="login-presentation">
+
+
+                <div class="login-presentation-content">
+
+
+                    <span class="login-small-title">
+                        BEM-VINDO À
+                    </span>
+
+
+                    <h1>
+                        NEXTXP
+                        <span>GAMING</span>
+                    </h1>
+
+
+                    <p>
+                        Entre na sua conta e tenha acesso a uma
+                        experiência gamer completa.
+                    </p>
+
+
+
+                    <!-- BENEFÍCIOS -->
+                    <div class="login-benefits">
+
+
+                        <div class="login-benefit">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <div>
+
+                                <strong>
+                                    Carrinho salvo
+                                </strong>
+
+                                <span>
+                                    Seus produtos sempre com você.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="login-benefit">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                            <div>
+
+                                <strong>
+                                    Seus favoritos
+                                </strong>
+
+                                <span>
+                                    Salve os produtos que mais gostar.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="login-benefit">
+
+                            <i class="fa-solid fa-box"></i>
+
+                            <div>
+
+                                <strong>
+                                    Acompanhe seus pedidos
+                                </strong>
+
+                                <span>
+                                    Consulte suas compras facilmente.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="login-benefit">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            <div>
+
+                                <strong>
+                                    Ofertas exclusivas
+                                </strong>
+
+                                <span>
+                                    Promoções especiais para clientes.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 FORMULÁRIO DE LOGIN
+            =================================================== -->
+            <section class="login-form-area">
+
+
+                <div class="login-card">
+
+
+                    <!-- ÍCONE -->
+                    <div class="login-user-icon">
+
+                        <i class="fa-regular fa-user"></i>
+
+                    </div>
+
+
+
+                    <div class="login-card-title">
+
+
+                        <h2>
+                            Entrar
+                        </h2>
+
+
+                        <p>
+                            Acesse sua conta NextXP Gaming
+                        </p>
+
+
+                    </div>
+
+
+
+                    <!-- FORMULÁRIO -->
+                    <form
+                        class="login-form"
+                        id="loginForm"
+                    >
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+
+                            <label for="loginEmail">
+
+                                E-mail
+
+                            </label>
+
+
+                            <div class="input-group">
+
+
+                                <i class="fa-regular fa-envelope"></i>
+
+
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    name="email"
+                                    placeholder="Digite seu e-mail"
+                                    required
+                                >
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- SENHA -->
+                        <div class="form-group">
+
+
+                            <label for="loginPassword">
+
+                                Senha
+
+                            </label>
+
+
+                            <div class="input-group">
+
+
+                                <i class="fa-solid fa-lock"></i>
+
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    name="senha"
+                                    placeholder="Digite sua senha"
+                                    required
+                                >
+
+
+                                <button
+                                    type="button"
+                                    class="show-password"
+                                    id="showPassword"
+                                    aria-label="Mostrar senha"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- LEMBRAR / ESQUECI -->
+                        <div class="login-options">
+
+
+                            <label class="remember-me">
+
+
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe"
+                                >
+
+
+                                <span>
+                                    Lembrar de mim
+                                </span>
+
+
+                            </label>
+
+
+
+                            <a href="recuperar-senha.html">
+    Esqueci minha senha
+</a>
+
+
+                        </div>
+
+
+
+                        <!-- BOTÃO -->
+                        <button
+                            type="submit"
+                            class="login-button"
+                        >
+
+                            ENTRAR
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <!-- DIVISOR -->
+                    <div class="login-divider">
+
+
+                        <span>
+                            ou
+                        </span>
+
+
+                    </div>
+
+
+
+                    <!-- CADASTRO -->
+                    <div class="register-area">
+
+
+                        <p>
+                            Ainda não possui uma conta?
+                        </p>
+
+
+                        <a
+                            href="cadastro.html"
+                            class="register-button"
+                        >
+
+                            Criar minha conta
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         RODAPÉ SIMPLES
+    =================================================== -->
+    <footer class="login-footer">
+
+
+        <div class="container">
+
+
+            <p>
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>

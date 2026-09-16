@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Detalhes do pedido - NextXP Gaming"
+    >
+
+    <title>Detalhes do Pedido | NextXP Gaming</title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="order-details-page">
+
+
+    <!-- ==================================================
+         CABEÇALHO
+    =================================================== -->
+    <header class="order-details-header">
+
+        <div class="container order-details-header-content">
+
+
+            <a href="../index.html">
+
+                <img
+                    src="../assets/img/logo-nextxp.png"
+                    alt="NextXP Gaming"
+                    class="order-details-logo"
+                >
+
+            </a>
+
+
+            <a
+                href="minha-conta.html"
+                class="order-details-back"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para Meus Pedidos
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTEÚDO
+    =================================================== -->
+    <main class="order-details-main">
+
+        <div class="container">
+
+
+            <!-- ==========================================
+                 TÍTULO
+            =========================================== -->
+            <div class="order-details-title">
+
+                <span>
+                    NEXTXP GAMING
+                </span>
+
+                <h1>
+                    Detalhes do Pedido
+                </h1>
+
+                <p>
+                    Consulte todas as informações da sua compra.
+                </p>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 CABEÇALHO DO PEDIDO
+            =========================================== -->
+            <section class="order-details-top">
+
+
+                <div>
+
+                    <span class="order-details-label">
+                        Pedido
+                    </span>
+
+                    <strong id="detailsOrderNumber">
+                        NXP000000
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="order-details-label">
+                        Data
+                    </span>
+
+                    <strong id="detailsOrderDate">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="order-details-label">
+                        Status
+                    </span>
+
+                    <strong class="details-status">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Pedido realizado
+
+                    </strong>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ==========================================
+                 STATUS DO PEDIDO
+            =========================================== -->
+            <section class="order-tracking-card">
+
+                <h2>
+                    Acompanhar Pedido
+                </h2>
+
+
+                <div class="order-tracking">
+
+
+                    <div class="tracking-item active">
+
+                        <div class="tracking-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+                        <strong>
+                            Pedido realizado
+                        </strong>
+
+                        <span>
+                            Compra registrada
+                        </span>
+
+                    </div>
+
+
+                    <div class="tracking-line"></div>
+
+
+                    <div class="tracking-item">
+
+                        <div class="tracking-icon">
+
+                            <i class="fa-solid fa-box"></i>
+
+                        </div>
+
+                        <strong>
+                            Preparando
+                        </strong>
+
+                        <span>
+                            Separando produtos
+                        </span>
+
+                    </div>
+
+
+                    <div class="tracking-line"></div>
+
+
+                    <div class="tracking-item">
+
+                        <div class="tracking-icon">
+
+                            <i class="fa-solid fa-truck-fast"></i>
+
+                        </div>
+
+                        <strong>
+                            Enviado
+                        </strong>
+
+                        <span>
+                            A caminho
+                        </span>
+
+                    </div>
+
+
+                    <div class="tracking-line"></div>
+
+
+                    <div class="tracking-item">
+
+                        <div class="tracking-icon">
+
+                            <i class="fa-solid fa-house"></i>
+
+                        </div>
+
+                        <strong>
+                            Entregue
+                        </strong>
+
+                        <span>
+                            Pedido entregue
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==========================================
+                 LAYOUT PRINCIPAL
+            =========================================== -->
+            <div class="order-details-layout">
+
+
+                <!-- ======================================
+                     LADO ESQUERDO
+                ======================================= -->
+                <div class="order-details-content">
+
+
+                    <!-- PRODUTOS -->
+                    <section class="order-details-card">
+
+                        <div class="order-details-card-title">
+
+                            <i class="fa-solid fa-box-open"></i>
+
+                            <h2>
+                                Produtos
+                            </h2>
+
+                        </div>
+
+
+                        <div
+                            id="detailsProducts"
+                            class="details-products"
+                        >
+
+                            <p class="details-empty">
+                                Nenhum produto encontrado.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- ENDEREÇO -->
+                    <section class="order-details-card">
+
+                        <div class="order-details-card-title">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <h2>
+                                Endereço de Entrega
+                            </h2>
+
+                        </div>
+
+
+                        <div class="details-address">
+
+                            <strong id="detailsCustomerName">
+                                Cliente
+                            </strong>
+
+
+                            <p id="detailsStreet">
+                                -
+                            </p>
+
+
+                            <p>
+
+                                <span id="detailsNeighborhood">
+                                    -
+                                </span>
+
+                                -
+
+                                <span id="detailsCity">
+                                    -
+                                </span>
+
+                                /
+
+                                <span id="detailsState">
+                                    -
+                                </span>
+
+                            </p>
+
+
+                            <p>
+
+                                CEP:
+
+                                <span id="detailsCep">
+                                    -
+                                </span>
+
+                            </p>
+
+
+                            <p
+                                id="detailsComplementContainer"
+                                style="display: none;"
+                            >
+
+                                Complemento:
+
+                                <span id="detailsComplement">
+                                    -
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- ======================================
+                     LADO DIREITO
+                ======================================= -->
+                <aside class="order-details-summary">
+
+
+                    <h2>
+                        Resumo do Pedido
+                    </h2>
+
+
+                    <div class="details-summary-line">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="detailsSubtotal">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="details-summary-line">
+
+                        <span>
+                            Desconto
+                        </span>
+
+                        <strong id="detailsDiscount">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="details-summary-line">
+
+                        <span>
+                            Frete
+                        </span>
+
+                        <strong id="detailsShipping">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="details-summary-divider"></div>
+
+
+                    <div class="details-summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="detailsTotal">
+                            R$ 0,00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="details-summary-divider"></div>
+
+
+
+                    <!-- PAGAMENTO -->
+                    <div class="details-payment">
+
+                        <span>
+                            Forma de pagamento
+                        </span>
+
+                        <strong id="detailsPayment">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- CLIENTE -->
+                    <div class="details-customer">
+
+                        <span>
+                            E-mail
+                        </span>
+
+                        <strong id="detailsEmail">
+                            -
+                        </strong>
+
+                    </div>
+
+
+
+                    <a
+                        href="../index.html"
+                        class="details-buy-again"
+                    >
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        Continuar comprando
+
+                    </a>
+
+
+                    <div class="details-security">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>
+                            Compra protegida pela NextXP Gaming
+                        </span>
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+    <footer class="order-details-footer">
+
+        <div class="container order-details-footer-content">
+
+            <img
+                src="../assets/img/logo-nextxp.png"
+                alt="NextXP Gaming"
+            >
+
+            <p>
+                © 2026 NextXP Gaming.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>
